@@ -1,0 +1,170 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+"set rtp+=$VIM_HOME/vimfiles/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'itchyny/lightline.vim'
+"Plugin 'Lokaltog/vim-powerline'
+Plugin 'mattn/emmet-vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-eunuch'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'yggdroot/indentline'
+Plugin 'w0rp/ale'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-markdown'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+syntax on " additional
+
+autocmd! bufwritepost .vimrc source %
+
+"make jj do esc"
+inoremap jj <Esc>
+
+"make esc do nothing"
+inoremap <Esc> <Nop>
+
+" Rebind <Leader> key
+let mapleader = ","
+
+" Rebind command mode
+nnoremap ; :
+
+" Clean Search Highlight
+nmap <silent> ,/ :nohlsearch<CR>
+
+" easier moving between tabs
+"map <Leader>n :tabprevious<CR>
+"map <Leader>m :tabnext<CR>
+"map <Leader>c :tabclose<CR>
+"map <Leader>t :tabedit<CR>
+noremap <S-l> gt
+noremap <S-h> gT
+
+
+" easier moving between window
+noremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+
+" easier pastetoggle
+set pastetoggle=<F2>
+
+" Showing line numbers and length
+set number  " show line numbers
+set tw=79   " width of document (used by gd)
+set nowrap  " don't automatically wrap on load
+set fo-=t   " don't automatically wrap text when typing
+set colorcolumn=80
+highlight ColorColumn ctermbg=lightblue
+highlight LineNr ctermfg=lightblue ctermbg=black
+
+"useful settings
+set noundofile
+set history=700
+set undolevels=700
+
+
+" Real programmers don't use TABs but spaces
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set shiftround
+set expandtab
+
+
+" Make search case insensitive
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Disable stupid backup and swap files - they trigger too many events
+" for file system watchers
+set nobackup
+set nowritebackup
+set noswapfile
+
+
+"""""""""""""""""" Plugin Config """"""""""""""
+" Config scrooloose/nerdtree
+" easier toggle NERDTree
+map <Leader>e :NERDTreeToggle<CR>
+
+" Config itchyny/lightline
+set laststatus=2
+
+" Config yggdroot/indentline
+let g:indentLine_char = '|'
+let g:indentLine_setColors = 100
+let g:indentLine_bgcolor_term = 0
+let g:indentLine_bgcolor_gui = '#FF5F00'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

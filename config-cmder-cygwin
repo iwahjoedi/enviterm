@@ -1,0 +1,7 @@
+
+#Set parameter
+/icon D:\dev\cygwin64\Cygwin-Terminal.ico
+
+#Set shell
+D:\dev\cygwin64\Cygwin.bat -c "/bin/xhere /bin/bash.exe '%V'"
+
