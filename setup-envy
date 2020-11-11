@@ -7,3 +7,33 @@
 
 
 
+# Linux Terminal Coding Evironment
+## Require:
+1. zsh + oh-my-zsh : 
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+wget	
+```
+
+2. tmux with .tmux.conf include clipboard copy-paste patch
+
+3. neovim
+```bash
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
+```
+4. spacevim
+```bash
+curl -sLf https://spacevim.org/install.sh | bash -s -- -h
+```
+spacevim clipboard copy-paste patch
+```bash
+# configure init.toml for layers
+# patch .SpaceVim/config/functions.vim
+```
+5. nvm
+6. phpenv
+7. ruby
+8. perl
+9. pyenv
